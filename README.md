@@ -1,3 +1,3 @@
 # Vizor
 
-### A component library for Vue.js
+A component library for Vue.js
