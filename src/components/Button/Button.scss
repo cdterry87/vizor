@@ -1,0 +1,56 @@
+.button {
+  &,
+  &:link,
+  &:visited {
+    margin: .25rem .5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: .8rem 2.4rem;
+    transition: all 0.2s;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 10px 20px rgba(black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 5px 10px rgba(black, 0.2);
+  }
+
+  &--rounded {
+    border-radius: 10rem;
+  }
+
+  &--outlined {
+    background-color: transparent;
+    border: solid 2px currentColor;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--small {
+    padding: .5rem 1.75rem;
+  }
+
+  &--medium {
+    padding: 1.15rem 3rem;
+  }
+
+  &--large {
+    padding: 1.5rem 4rem;
+  }
+}
