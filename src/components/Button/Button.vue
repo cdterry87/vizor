@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'VzButton',
+  name: 'VButton',
   components: {},
   props: {
     type: {
@@ -56,5 +56,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import './Button.scss';
+  @import 'Button';
 </style>
