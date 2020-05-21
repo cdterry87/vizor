@@ -1,5 +1,7 @@
 import * as components from './components'
 
+import './scss/main.scss'
+
 const Vizor = {
   install(Vue) {
     for (const componentName in components) {
