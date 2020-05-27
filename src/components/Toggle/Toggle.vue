@@ -36,6 +36,10 @@
             }
           }
         }
+      },
+      disabled: {
+        type: Boolean,
+        default: false
       }
     }
   }

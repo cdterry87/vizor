@@ -13,6 +13,7 @@
         'button--large': large
       }
     ]"
+    :disabled="disabled"
   >
     <slot>Button</slot>
   </component>
@@ -21,7 +22,6 @@
 <script>
 export default {
   name: 'VButton',
-  components: {},
   props: {
     type: {
       type: String,
@@ -48,6 +48,10 @@ export default {
       default: false
     },
     large: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
       type: Boolean,
       default: false
     }
